@@ -63,6 +63,9 @@ nav h1 {
 nav i {
   color: white;
 }
+nav .ham {
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   nav .ham {
     display: none;
@@ -255,6 +258,7 @@ nav ul li a {
   }
 }
 .projects ul li {
+  cursor: pointer;
   width: 100%;
   list-style-type: none;
   margin-bottom: 1em;

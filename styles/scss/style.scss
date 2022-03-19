@@ -67,6 +67,7 @@ nav {
   }
 
   .ham {
+    cursor: pointer;
     @include mq(768px) {
       display: none;
     }
@@ -258,6 +259,7 @@ nav {
     }
 
     li {
+      cursor: pointer;
       width: 100%;
       list-style-type: none;
       margin-bottom: 1em;
