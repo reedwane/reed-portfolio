@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  line-height: 150%;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+  font-weight: 500;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(87, 6, 193, 0.494);
+  z-index: 4;
+}
+
+nav {
+  z-index: 5;
+  padding: 0.5em;
+  text-align: right;
+  background: rgba(87, 6, 193, 0.494);
+  position: fixed;
+  top: 0;
+  height: 3em;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 60% auto auto;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    position: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+nav h1 {
+  width: 60%;
+  color: white;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  nav h1 {
+    width: 20%;
+  }
+}
+nav i {
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  nav .ham {
+    display: none;
+  }
+}
+nav ul {
+  display: none;
+  background: white;
+  border: 1px solid #5806c1;
+  border-radius: 20px;
+  max-height: fit-content;
+  display: inline-block;
+  position: relative;
+  left: 25%;
+  top: 5em;
+}
+@media screen and (min-width: 768px) {
+  nav ul {
+    height: fit-content;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background: none;
+    border: none;
+  }
+}
+nav ul li {
+  list-style-type: none;
+  padding: 1em;
+  color: #5806c1;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  nav ul li {
+    display: inline-block;
+    padding: 0;
+    color: white;
+    margin-right: 5%;
+  }
+}
+nav ul li a {
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  nav ul li a {
+    color: white;
+  }
+}
+
+.illustration {
+  margin-top: 5em;
+}
+@media screen and (min-width: 600px) {
+  .illustration {
+    padding: 5% 10% 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .illustration {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5% 10% 0;
+  }
+}
+.illustration img {
+  max-width: 100%;
+}
+.illustration .hero-text {
+  padding: 5%;
+}
+
+.about {
+  border-top-left-radius: 3em;
+  background: #5806c1;
+  color: white;
+  padding: 2em;
+  line-height: 150%;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 2em 15%;
+  }
+}
+.about h3 {
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.about p {
+  margin-bottom: 5em;
+}
+
+.roles {
+  width: 80%;
+  margin: -5em auto 5em;
+  background: white;
+  border-radius: 20px;
+  line-height: 150%;
+}
+@media screen and (min-width: 600px) {
+  .roles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .roles {
+    width: 90%;
+  }
+}
+.roles div {
+  padding: 5%;
+  border-bottom: 1px solid rgba(87, 6, 193, 0.494);
+  margin: 0 auto;
+}
+@media screen and (min-width: 600px) {
+  .roles div {
+    display: inline-block;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .roles div {
+    padding: 2%;
+    width: 30%;
+  }
+}
+.roles img {
+  width: 20%;
+  margin: 1em;
+}
+.roles h4 {
+  color: rgba(87, 6, 193, 0.494);
+}
+.roles p {
+  margin: 2%;
+}
+.roles p span {
+  font-weight: 500;
+}
+.roles li {
+  list-style-type: none;
+}
+
+.projects {
+  background: white;
+  border: 3px solid rgba(87, 6, 193, 0.494);
+  margin: 0 3%;
+  border-radius: 2em;
+  border-bottom-left-radius: 0em;
+  border-top-right-radius: 0;
+  padding: 10%;
+  color: black;
+}
+@media screen and (min-width: 600px) {
+  .projects {
+    padding: 5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects {
+    padding: 5% 0;
+    border-radius: 5em;
+    border-bottom-left-radius: 0em;
+    border-top-right-radius: 0;
+  }
+}
+.projects .lang {
+  width: 20%;
+  margin: 1em;
+}
+@media screen and (min-width: 600px) {
+  .projects .lang {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects .lang {
+    width: 7%;
+  }
+}
+.projects h3 {
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.projects ul li {
+  width: 100%;
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+.projects ul li:hover img {
+  width: 90%;
+  height: 8em;
+}
+@media screen and (min-width: 600px) {
+  .projects ul li {
+    display: inline-block;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects ul li {
+    width: 30%;
+    max-width: 320px;
+  }
+}
+.projects ul li a {
+  color: black;
+  display: none;
+}
+.projects ul li img {
+  width: 80%;
+  height: 7em;
+  object-fit: fill;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(87, 6, 193, 0.494);
+}
+@media screen and (min-width: 375px) {
+  .projects ul li img {
+    width: 60%;
+  }
+}
+
+.cta {
+  background: #5806c1;
+  margin-top: 12em;
+}
+
+.contact {
+  color: black;
+  background: white;
+  border: 1px solid #5806c1;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5%;
+  border-radius: 20px;
+  position: relative;
+  top: -5em;
+}
+@media screen and (min-width: 600px) {
+  .contact {
+    width: 70%;
+    padding: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    width: 80%;
+  }
+  .contact h2,
+.contact p {
+    display: inline-block;
+    margin: 5%;
+    width: 30%;
+  }
+}
+.contact p {
+  margin-top: 2em;
+}
+.contact .contacts {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+@media screen and (min-width: 768px) {
+  .contact .contacts {
+    display: block;
+  }
+}
+.contact a {
+  color: #5806c1;
+  font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .contact a {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .contact a {
+    display: inline-block;
+    margin: 0.5em;
+  }
+}
+
+footer {
+  min-height: 5em;
+  margin-top: -2px;
+  background: #5806c1;
+  color: white;
+  padding: 5%;
+}
+footer img {
+  width: 40%;
+}
+footer .socials {
+  margin: 2em auto 2em;
+}
+footer .socials a {
+  color: white;
+  display: inline-block;
+  font-size: 1.5rem;
+  width: 2em;
+  height: 2em;
+  border: 1px solid white;
+  margin: 2%;
+  padding: 0.3em;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=index.css.map */

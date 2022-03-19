@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/cd99e521b9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles/index.css" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
     <meta
@@ -16,216 +22,358 @@
   </head>
 
   <body>
+    <header>
+      <div class="container">
+        <nav>
+          <h1>reedwane</h1>
+          <!-- <i class="fa fa-moon"></i> -->
+          <i></i>
+          <img class="ham" src="./icons/icon-hamburger.svg" alt="hamburger" />
+          <ul class="menu">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="modal"></div>
+
     <main>
-      <h1>Hello There!</h1>
+      <!-- <div class="hero">
+        <div class="container">
+          <div class="hero-text">
+            <h2>Front End Developer</h2>
 
-      <p>
-        This first list is the collection of My web Applications made with
-        frameworks arranged in descending order of completion
-      </p>
-      <p>Please feel free to let me know what i can do better</p>
+            <p>I like visuals, and I love to code them clean and simple!</p>
+          </div>
+        </div>
+      </div> -->
 
-      <section>
-        <ul>
-          <li>
-            <img src="images/space-tourism-web.jpg" alt="space-tourism-web" />
-            <h2>Space Tourism Website with REACT JS and SASS</h2>
-            <p>
-              <a href="https://space-tourism-reed.netlify.app/" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+      <div class="illustration">
+        <img src="./icons/web-dev.png" alt="" />
 
-          <li>
-            <img
-              src="images/countries-api-backend.PNG"
-              alt="Countries api backend with node js"
-            />
-            <h2>Backend For Countries Data with Node js</h2>
-            <p>
-              <a href="https://reed-countries-api.herokuapp.com" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+        <div class="hero-text">
+          <h2>Front-end Developer</h2>
 
-          <li>
-            <img
-              src="images/mern-countries-app.PNG"
-              alt="Countries app with MERN"
-            />
-            <h2>Full stack Countries details app with the MERN stack</h2>
-            <p>
-              <a href="https://mern-countries-reed.netlify.app/" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+          <p>I like visuals, and I love to code them clean and simple!</p>
+        </div>
+      </div>
 
-          <li>
-            <img src="images/node-blog-app.PNG" alt="Node blog app" />
-            <h2>Full stack blog app with Node JS and EJS</h2>
-            <p>
-              <a href="https://art-blog-app.herokuapp.com/blogs" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+      <div id="bio" class="about">
+        <h3>Hello, I'm Ridwan. I'm glad you are here.</h3>
 
-          <li>
-            <img
-              src="images/react-rest-countries.PNG"
-              alt="REACT-rest-countries-api"
-            />
-            <h2>REST Countries with REACT (FE)</h2>
-            <p>
-              <a
-                href="https://react-countries-reed.netlify.app/"
-                target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+        <p>
+          I began my web development journey when I saw one of my mentors coding
+          up a page and trying to get each pixels and colors right. Ever since,
+          I've loved every bit of the process. I am fascinated and interested in
+          developing interfaces that make businesses thrive and users happy. I
+          am narurally concerned about the wellbeing of others, like interesting
+          challenges and the joy that comes with conquering them, and I am
+          commited to learning and growth at every point in time.
+        </p>
+      </div>
 
-          <li>
-            <img src="images/react-blog-app.PNG" alt="react-blog-app" />
-            <h2>Demo Blog App with React</h2>
-            <p>
-              <a
-                href="https://react-demo-blog-reed.netlify.app/"
-                target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
-        </ul>
-      </section>
+      <div id="skills" class="roles">
+        <div class="fe">
+          <img src="/icons/fe.svg" alt="dev" />
 
-      <p>
-        Below is the collection of my FrontEndMentor completed projects. Totally
-        made with HTML, CSS and Vanilla Javascript
-      </p>
-      <p>You can find the ugliest ones down the list ;)</p>
+          <h3>Front-end Developer</h3>
+          <p>
+            I presently enjoy solving the riddles and putting the structure up
+            in browsers looking elegant
+          </p>
 
-      <section class=".project-list">
-        <ul>
-          <li>
-            <img src="images/crowdfunding.jpg" alt="crowdfunding" />
-            <h2>Crowdfunding Page</h2>
-            <p>
-              <a href="https://reed-crowdfunding.netlify.app" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+          <h4>My Languages & Markups</h4>
+          <p>HTML, CSS, SCSS, JavaScript, EJS, React JS</p>
 
-          <li>
-            <img src="images/rest-countries-api.PNG" alt="rest-countries-api" />
-            <h2>REST Countries API</h2>
-            <p>
-              <a href="https://rest-countries-reed.netlify.app" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+          <h4>Tools</h4>
+          <ul>
+            <li>Vscode</li>
+            <li>Git and Github</li>
+            <li>Terminal</li>
+            <li>Chrome</li>
+          </ul>
+        </div>
 
-          <li>
-            <img src="images/ui-test-nck.PNG" alt="ui-test-nck" />
-            <h2>UI test</h2>
-            <p>
-              <a href="https://ui-nck-reed.netlify.app" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+        <div class="admin">
+          <img src="icons/admin.png" alt="admin" />
 
-          <li>
-            <img src="images/calculator-app.PNG" alt="calculator-app" />
-            <h2>Calculator App</h2>
-            <p>
-              <a href="https://calculator-app-reed.netlify.app" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+          <h3>Administration</h3>
+          <p>
+            It gives me joy to see events occur like beads well strung together.
+            I love to be part of the team that see to planning and organization
+          </p>
 
-          <li>
-            <img src="images/tip-calculator-app.PNG" alt="tip-calculator-app" />
-            <h2>Tip Calculator App</h2>
-            <p>
-              <a href="https://tip-calculator-reed.netlify.app/" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+          <h4>Experiences</h4>
+          <ul>
+            <li>Sheer Minds Investment Group</li>
+            <li>Accountabilty Partners Platform</li>
+            <li>GSTI</li>
+            <li>SBIO, Akure</li>
+          </ul>
 
-          <li>
-            <img
-              src="images/time-tracking-dashboard.PNG"
-              alt="time-tracking-dashboard"
-            />
-            <h2>Time Tracking Dashboard</h2>
-            <p>
-              <a href="https://time-dashboard-reed.netlify.app" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+          <h4>Tools</h4>
+          <ul>
+            <li>Microsoft Office Suite</li>
+            <li>Google Workspace</li>
+          </ul>
+        </div>
 
-          <li>
-            <img src="images/blogr.PNG" alt="blogr" />
-            <h2>Blogr</h2>
-            <p>
-              <a href="https://blogr-reed.netlify.app" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+        <div class="soft">
+          <img src="icons/icon-social.svg" alt="soft" />
+          <h3>Soft Skills</h3>
 
-          <li>
-            <img
-              src="images/huddle-landing-page.PNG"
-              alt="huddle-landing-page"
-            />
-            <h2>Huddle Landing Page</h2>
-            <p>
-              <a href="https://huddle-landing-reed.netlify.app" target="_blank"
-                >Live project here</a
-              >
-            </p>
-          </li>
+          <ul>
+            <li>Attention to Details</li>
+            <li>Organization</li>
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>Time Management</li>
+            <li>Technical Literacy and Adaptability</li>
+          </ul>
 
-          <!-- <li>
-                    <img src="images/four-card-feature.PNG" alt="four-card-feature">
-                    <h2>Four Card Feature</h2>
-                    <p><a href="https://reedwane.github.io/frontendmentorpages/four-card-feature/" target="_blank">Live
-                            project
-                            here</a></p>
-                </li>
+          <p>Personality type: <span>ESFJ-A</span></p>
+        </div>
+      </div>
 
-                <li>
-                    <img src="images/testimonial-grid.PNG" alt="testimonial-grid">
-                    <h2>Testimonial Grid</h2>
-                    <p><a href="https://reedwane.github.io/frontendmentorpages/testimonials-grid-section-main/"
-                            target="_blank">Live project
-                            here</a></p>
-                </li> -->
-        </ul>
-      </section>
+      <div id="projects" class="projects">
+        <h2>My Works</h2>
 
-      <p>
-        You can check out my
-        <a href="https://github.com/reedwane">GitHub Profile</a>
-        <br />
-        Reach out to me on
-        <a href="mailto:abdulkareemtemmy07@gmail.com">Gmail</a>, or
-        <a href="https://www.linkedin.com/in/ridwan-abdulkareem/">Linkedin.</a>
-        You can as well get in touch on
-        <a href="https//wa.me/2348186012349?text=">Whatsapp</a>
-      </p>
+        <section class="react">
+          <img src="icons/reactjs.png" class="lang" alt="react" />
+          <ul>
+            <li>
+              <img src="images/space-tourism-web.jpg" alt="space-tourism-web" />
+              <h3>Space Tourism Website</h3>
+              <p>
+                <a
+                  href="https://space-tourism-reed.netlify.app/"
+                  target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li>
+
+            <li>
+              <img
+                src="images/countries-api-backend.PNG"
+                alt="Countries api backend with node js"
+              />
+              <h3>Countries Data Backend</h3>
+              <p>
+                <a
+                  href="https://reed-countries-api.herokuapp.com"
+                  target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li>
+
+            <li>
+              <img
+                src="images/mern-countries-app.PNG"
+                alt="Countries app with MERN"
+              />
+              <h3>Countries Details app</h3>
+              <p>
+                <a
+                  href="https://mern-countries-reed.netlify.app/"
+                  target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li>
+
+            <li>
+              <img src="images/node-blog-app.PNG" alt="Node blog app" />
+              <h3>Blog App</h3>
+              <p>
+                <a
+                  href="https://art-blog-app.herokuapp.com/blogs"
+                  target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li>
+
+            <!-- <li>
+              <img
+                src="images/react-rest-countries.PNG"
+                alt="REACT-rest-countries-api"
+              />
+              <h2>REST Countries</h2>
+              <p>
+                <a
+                  href="https://react-countries-reed.netlify.app/"
+                  target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li> -->
+
+            <!-- <li>
+              <img src="images/react-blog-app.PNG" alt="react-blog-app" />
+              <h2>Demo Blog App</h2>
+              <p>
+                <a
+                  href="https://react-demo-blog-reed.netlify.app/"
+                  target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li> -->
+          </ul>
+        </section>
+
+        <section class="vanilla">
+          <img src="icons/java-script.png" alt="javascript" class="lang" />
+          <ul>
+            <li>
+              <img src="images/crowdfunding.jpg" alt="crowdfunding" />
+              <h3>Crowdfunding Page</h3>
+              <p>
+                <a href="https://reed-crowdfunding.netlify.app" target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li>
+
+            <!-- <li>
+              <img src="images/rest-countries-api.PNG" alt="rest-countries-api" />
+              <h2>REST Countries API</h2>
+              <p>
+                <a href="https://rest-countries-reed.netlify.app" target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li> -->
+
+            <li>
+              <img src="images/blogr.PNG" alt="blogr" />
+              <h3>Blogr</h3>
+              <p>
+                <a href="https://blogr-reed.netlify.app" target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li>
+
+            <li>
+              <img
+                src="images/time-tracking-dashboard.PNG"
+                alt="time-tracking-dashboard"
+              />
+              <h3>Time Tracking Dashboard</h3>
+              <p>
+                <a
+                  href="https://time-dashboard-reed.netlify.app"
+                  target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li>
+
+            <!-- <li>
+              <img src="images/ui-test-nck.PNG" alt="ui-test-nck" />
+              <h2>UI test</h2>
+              <p>
+                <a href="https://ui-nck-reed.netlify.app" target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li> -->
+
+            <li>
+              <img src="images/calculator-app.PNG" alt="calculator-app" />
+              <h3>Calculator App</h3>
+              <p>
+                <a
+                  href="https://calculator-app-reed.netlify.app"
+                  target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li>
+
+            <li>
+              <img
+                src="images/tip-calculator-app.PNG"
+                alt="tip-calculator-app"
+              />
+              <h3>Tip Calculator App</h3>
+              <p>
+                <a
+                  href="https://tip-calculator-reed.netlify.app/"
+                  target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li>
+
+            <!-- <li>
+              <img
+                src="images/huddle-landing-page.PNG"
+                alt="huddle-landing-page"
+              />
+              <h2>Huddle Landing Page</h2>
+              <p>
+                <a href="https://huddle-landing-reed.netlify.app" target="_blank"
+                  >Go Live!</a
+                >
+              </p>
+            </li> -->
+          </ul>
+        </section>
+      </div>
+
+      <div id="contact" class="cta">
+        <div class="contact">
+          <h2>Do you need my services?</h2>
+          <p>
+            Kindly Reach out to me now and you can get to know me more and
+            discuss better
+          </p>
+
+          <div class="contacts">
+            <a href="mailto:abdulkareemtemmy07@gmail.com"
+              ><i class="fa fa-envelope"></i
+            ></a>
+            <a href="https://wa.me/2348186012349?text="
+              ><i class="fa fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>&copy; Abdulkareem Ridwan 2021</footer>
+    <footer>
+      <img src="icons/reedwane.PNG" alt="logo" />
+
+      <p>Be Elegant.</p>
+
+      <div class="socials">
+        <a href="https://github.com/reedwane"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ridwan-abdulkareem/">
+          <i class="fa fa-linkedin"></i
+        ></a>
+
+        <a href="https://twitter.com/Reed_tope/">
+          <i class="fa fa-twitter"></i
+        ></a>
+
+        <a href="mailto:abdulkareemtemmy07@gmail.com"
+          ><i class="fa fa-envelope"></i
+        ></a>
+        <a href="https://wa.me/2348186012349?text="
+          ><i class="fa fa-whatsapp"></i
+        ></a>
+      </div>
+      <p>&copy; Abdulkareem Ridwan 2021</p>
+    </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
