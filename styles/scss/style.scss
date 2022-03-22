@@ -120,6 +120,21 @@ nav {
 
 .illustration {
   margin-top: 5em;
+
+  .hero {
+    @keyframes slide {
+      0% {
+        position: relative;
+        left: -100%;
+      }
+      100% {
+        left: 0;
+      }
+    }
+
+    animation: 0.5s ease-in-out slide;
+  }
+
   @include mq(600px) {
     padding: 5% 10% 0;
   }
