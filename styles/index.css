@@ -119,6 +119,18 @@ nav ul li a {
 .illustration {
   margin-top: 5em;
 }
+.illustration .hero {
+  animation: 0.5s ease-in-out slide;
+}
+@keyframes slide {
+  0% {
+    position: relative;
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
 @media screen and (min-width: 600px) {
   .illustration {
     padding: 5% 10% 0;
