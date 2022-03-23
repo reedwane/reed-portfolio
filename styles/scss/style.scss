@@ -110,6 +110,10 @@ nav {
       a {
         text-decoration: none;
 
+        &:hover {
+          border-bottom: 2px solid white;
+        }
+
         @include mq(768px) {
           color: white;
         }
@@ -118,21 +122,64 @@ nav {
   }
 }
 
+@keyframes grow {
+  0% {
+    width: 50%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    left: -90%;
+  }
+  50% {
+    left: 90%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    right: -90%;
+  }
+  50% {
+    right: 70%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .illustration {
   margin-top: 5em;
 
   .hero {
-    @keyframes slide {
-      0% {
-        position: relative;
-        left: -100%;
-      }
-      100% {
-        left: 0;
-      }
-    }
-
-    animation: 0.5s ease-in-out slide;
+    position: relative;
+    animation: grow 1s ease-in 0s, slideInLeft 1s linear 0s;
   }
 
   @include mq(600px) {
@@ -150,6 +197,16 @@ nav {
 
   .hero-text {
     padding: 5%;
+
+    h2 {
+      display: inline-block;
+      overflow: hidden;
+      width: 18ch;
+      max-width: fit-content;
+      white-space: nowrap;
+      animation: typing 3s steps(20), blink 0.5s step-end infinite alternate;
+      border-right: 2px solid black;
+    }
   }
 }
 
@@ -180,6 +237,7 @@ nav {
   background: white;
   border-radius: 20px;
   line-height: 150%;
+  position: relative;
 
   @include mq(600px) {
     display: flex;
@@ -190,10 +248,20 @@ nav {
     width: 90%;
   }
 
+  .role {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+  }
+
+  .role.animate {
+    opacity: 1;
+  }
+
   div {
     padding: 5%;
     border-bottom: 1px solid $faint-blue;
     margin: 0 auto;
+    position: relative;
 
     @include mq(600px) {
       display: inline-block;
@@ -273,11 +341,17 @@ nav {
       justify-content: center;
     }
 
+    li.animate {
+      opacity: 1;
+    }
+
     li {
       cursor: pointer;
       width: 100%;
       list-style-type: none;
       margin-bottom: 1em;
+      opacity: 0.2;
+      transition: opacity 250ms linear;
 
       &:hover {
         img {

@@ -110,14 +110,66 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
 }
+nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
 @media screen and (min-width: 768px) {
   nav ul li a {
     color: white;
   }
 }
 
+@keyframes grow {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    left: -90%;
+  }
+  50% {
+    left: 90%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes slideInRight {
+  0% {
+    right: -90%;
+  }
+  50% {
+    right: 70%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 .illustration {
   margin-top: 5em;
+}
+.illustration .hero {
+  position: relative;
+  animation: grow 1s ease-in 0s, slideInLeft 1s linear 0s;
 }
 @media screen and (min-width: 600px) {
   .illustration {
@@ -136,6 +188,15 @@ nav ul li a {
 }
 .illustration .hero-text {
   padding: 5%;
+}
+.illustration .hero-text h2 {
+  display: inline-block;
+  overflow: hidden;
+  width: 18ch;
+  max-width: fit-content;
+  white-space: nowrap;
+  animation: typing 3s steps(20), blink 0.5s step-end infinite alternate;
+  border-right: 2px solid black;
 }
 
 .about {
@@ -164,6 +225,7 @@ nav ul li a {
   background: white;
   border-radius: 20px;
   line-height: 150%;
+  position: relative;
 }
 @media screen and (min-width: 600px) {
   .roles {
@@ -176,10 +238,18 @@ nav ul li a {
     width: 90%;
   }
 }
+.roles .role {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+.roles .role.animate {
+  opacity: 1;
+}
 .roles div {
   padding: 5%;
   border-bottom: 1px solid rgba(87, 6, 193, 0.494);
   margin: 0 auto;
+  position: relative;
 }
 @media screen and (min-width: 600px) {
   .roles div {
@@ -257,11 +327,16 @@ nav ul li a {
     justify-content: center;
   }
 }
+.projects ul li.animate {
+  opacity: 1;
+}
 .projects ul li {
   cursor: pointer;
   width: 100%;
   list-style-type: none;
   margin-bottom: 1em;
+  opacity: 0.2;
+  transition: opacity 250ms linear;
 }
 .projects ul li:hover img {
   width: 90%;
