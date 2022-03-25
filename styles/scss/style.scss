@@ -201,7 +201,7 @@ nav {
     h2 {
       display: inline-block;
       overflow: hidden;
-      width: 18ch;
+      width: 20ch;
       max-width: fit-content;
       white-space: nowrap;
       animation: typing 3s steps(20), blink 0.5s step-end infinite alternate;
@@ -463,7 +463,7 @@ footer {
   padding: 5%;
 
   img {
-    width: 40%;
+    width: 20%;
   }
 
   .socials {
@@ -481,3 +481,33 @@ footer {
     }
   }
 }
+
+//
+//
+// .from-left {
+//   grid-column: 2 / 3;
+//   -webkit-transform: translateX(-50%);
+//   transform: translateX(-50%);
+// }
+
+// .from-right {
+//   grid-column: 3 / 4;
+//   -webkit-transform: translateX(50%);
+//   transform: translateX(50%);
+// }
+
+// .from-left,
+// .from-right {
+//   transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+//   transition: opacity 250ms ease-in, transform 400ms ease-in;
+//   transition: opacity 250ms ease-in, transform 400ms ease-in,
+//     -webkit-transform 400ms ease-in;
+//   opacity: 0;
+// }
+
+// .from-left.appear,
+// .from-right.appear {
+//   -webkit-transform: translateX(0);
+//   transform: translateX(0);
+//   opacity: 1;
+// }

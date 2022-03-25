@@ -192,7 +192,7 @@ nav ul li a:hover {
 .illustration .hero-text h2 {
   display: inline-block;
   overflow: hidden;
-  width: 18ch;
+  width: 20ch;
   max-width: fit-content;
   white-space: nowrap;
   animation: typing 3s steps(20), blink 0.5s step-end infinite alternate;
@@ -445,7 +445,7 @@ footer {
   padding: 5%;
 }
 footer img {
-  width: 40%;
+  width: 20%;
 }
 footer .socials {
   margin: 2em auto 2em;
